@@ -1,0 +1,75 @@
+In One Night Ultimate Werewolf, each player takes on the role of a Villager, a Werewolf, or a special character. It’s your job to figure out who the Werewolves are and to kill at least one of them in order to win...unless you’ve become a Werewolf yourself!
+
+BASIC SETUP
+Setup differs based on the number of players (3-10). There should always be three more cards than the number of players. Shuffle the selected cards face down and deal one to each player. Put the remaining three cards and tokens that match all the cards being used in the middle of the table. Each player should secretly view their card, and place it face down near the three cards in the center of the table. There are several roles that are called on at night to do a night action. However, players with a Villager, Tanner, or Hunter card never wake up at night. In addition to having a role card, one player is designated the Announcer and announces each of the roles in order and silently counts to ten after each role is woken up to allow the players with that role to perform their action at night.
+
+For example:
+Announcer: “Everyone, close your eyes.” All players close their eyes (including the Announcer). “Werewolves, wake up and look for other werewolves.” The werewolves open their eyes and look for anyone else whose eyes are open (there might not be any others). “Werewolves, close your eyes. Seer, wake up. You may look at another player’s card or two of the center cards.” The player with the Seer card opens her eyes and may quietly look at one other player’s card or any two of the cards in the center. “Seer, close your eyes. Robber, wake up. You may exchange your card with another player’s card, and then view your new card.” The player with the Robber card opens his eyes and may quietly exchange his card for another player’s card, which he looks at. “Robber, close your eyes. Troublemaker, wake up. You may exchange cards between two other players.” The player with the Troublemaker card opens her eyes and may quietly exchange the cards of two other players without looking at those cards. “Troublemaker, close your eyes.” The Announcer, keeping his eyes closed, moves the cards around slightly (this ensures no one can claim a card was moved/inspected because it is no longer in its original position). “ Everyone, Wake up!” All players open their eyes and look around suspiciously. At night, players who are not active (whose eyes are closed) may not move, point, or do anything to communicate with the active player(s).
+
+DAY
+After the night phase, players discuss amongst themselves who they believe the Werewolves are. All players may say anything, but may never show their card to anyone. Werewolves might want to claim to be a different role so that they don’t die. Because certain roles change other players’ cards, some players will believe they are one role, when they are actually a different one. After the night phase, your role is the card that is currently in front of you, which may be different than your original role. No one may look at any cards after the night phase. After a few minutes of discussion, players vote.
+“Everyone, three, two, one, VOTE!”
+Each player points to another player. The player with the most votes dies and reveals his card. In case of a tie, all players tied with the most votes die and reveal their cards. If no player receives more than one vote, no one dies. One way the players might achieve this is if everyone votes in the same direction around the table, with each player receiving one vote (decide this as a group before you vote).
+
+GAME END
+After just one night and one day...
+The village team wins:
+1) If at least one Werewolf dies. Even if one or more players who are not Werewolves die in addition to a Werewolf dying, everyone on the village team wins.
+2) If no one is a Werewolf and no one dies. It is possible for no one to be a Werewolf if all Werewolf cards are in the center. The werewolf team only wins if at least one player is a Werewolf and no Werewolves are killed. If you are playing with the Tanner, there are special rules regarding who wins; see the Tanner’s role description for details.
+Note that this is different from other games! The werewolves don't actually kill anyone or remove players from the game; they just want to survive.
+
+ROLES THAT WAKE UP AT NIGHT
+These roles wake up at night in the following order (see the chart on the back page for a nice compressed list that’s easy to refer to). Within each of the role descriptions is a sample script which the Announcer may use:
+
+WEREWOLF
+At night, all Werewolves open their eyes and look for other werewolves. If no one else opens their eyes, the other Werewolves are in the center. Werewolves are on the werewolf team. “Werewolves, wake up and look for other Werewolves.” The Werewolves open their eyes and look for anyone else whose eyes are open (there might not be any others). “Werewolves, close your eyes.” Lone Wolf Option: If there is only one Werewolf, the Werewolf may view one center card. This is extremely beneficial to a Werewolf who doesn’t have a partner, and provides him with a useful tool for deceiving the rest of the players.
+
+MINION
+Immediately following the Werewolf phase at night, the Minion wakes up and sees who the Werewolves are. During this phase, all Werewolves put their thumbs up so the Minion can see who they are. The Werewolves don’t know who the Minion is. If the Minion dies and no Werewolves die, the Werewolves (and the Minion) win. If no players are Werewolves, the Minion wins as long as one other player (not the Minion) dies. This role can be a very powerful ally for the werewolf team. This Minion is on the werewolf team. “Minion, wake up. Werewolves, stick out your thumb so the Minion can see who you are.” The Minion opens his eyes. The Werewolves stick out a thumb for the Minion to see. The Minions look around to see which players are Werewolves. “Werewolves, put your thumbs away. Minion, close your eyes.”
+
+MASON
+When using the Masons always put both Masons in the game. The Mason wakes up at night and looks for the other Mason. If the Mason doesn’t see another Mason, it means the other Mason card is in the center. Masons are on the village team. “Masons, wake up and look for other Masons.” The Masons open their eyes and look for anyone else whose eyes are open (there might not be any others). “Masons, close your eyes.”
+
+SEER
+At night, the Seer may look either at one other player’s card or at two of the center cards, but does not move them. The Seer is on the village team. “Seer, wake up. You may look at another player’s card or two of the center cards.” The player with the Seer card opens her eyes and may quietly look at one other player’s card or any two of the cards in the center. “Seer, close your eyes.”
+
+ROBBER
+At night, the Robber may choose to rob a card from another player and place his Robber card where the other card was. Then the Robber looks at his new card. The player who receives the Robber card is on the village team. The Robber is on the team of the card he takes, however, he does not do the action of his new role at night. If the Robber chooses not to rob a card from another player, he remains the Robber and is on the village team. “Robber, wake up. You may exchange your card with another player’s card, and then view your new card.” The player with the Robber card opens his eyes and may quietly exchange his card for another player’s card, which he looks at. “Robber, close your eyes.
+
+TROUBLEMAKER
+At night, the Troublemaker may switch the cards of two other players without looking at those cards. The players who receive a different card are now the role (and team) of their new card, even though they don’t know what role that is until the end of the game. The Troublemaker is on the village team.
+
+DRUNK
+The Drunk is so drunk that he doesn’t remember his role. When it comes time to wake up at night, he must exchange his Drunk card for any card in the center, but he does not look at it. The Drunk is now the new role in front of him (even though he doesn’t know what that new role is) and is on that team.
+
+INSOMNIAC
+The Insomniac wakes up and looks at her card (to see if it has changed). Only use the Insomniac if the Robber and/or the Troublemaker are in the game. The Insomniac is on the village team. “Insomniac, wake up and look at your card.” The player with the Insomniac card opens her eyes and looks at her own card to see if it has changed during the night. “Insomniac, close your eyes.”
+
+NO-WAKE ROLES
+The following roles do not wake up at night:
+
+VILLAGER
+The Villager has no special abilities, but he is definitely not a werewolf. Players may often claim to be a Villager. The Villager is on the village team.
+
+TANNER
+The Tanner hates his job so much that he wants to die. The Tanner only wins if he dies. If the Tanner dies and no Werewolves die, the Werewolves do not win. If the Tanner dies and a Werewolf also dies, the village team wins too. The Tanner is considered a member of the village (but is not on their team), so if the Tanner dies when all werewolves are in the center, the village team loses. The Tanner is not on the werewolf or the villager team.
+
+HUNTER
+If the Hunter dies, the player he is pointing at dies as well (regardless of how many votes his target receives). The Hunter is on the village team.
+
+NIGHT WAKE ORDER
+When playing with different roles, the order that the roles wake up at night is important. The following is a list of ALL the roles that are woken at night, and the order they should be woken relative to each other (only call the roles that are in your game):
+#1: Doppelgänger
+#2: Werewolves
+#3: Minion
+#4: Masons
+#5: Seer
+#6: Robber
+#7: Troublemaker
+#8: Drunk
+#9: Insomniac
+#9a: Doppelgänger/Insomniac
+
+The Villagers, the Tanner, and the Hunter are never woken up at night.
+The Drunk knows they are no longer the Drunk, but not what they are now.
+The ONLY person who knows their card during the day phase is the Insomniac. All others *may* have been switched, **without knowing**.
