@@ -225,9 +225,7 @@ class GameState:
             if p.role_started is Role.werewolf:
                 if len(werewolf_ixs) == 2:
                     other_werewolf_ix = (
-                        werewolf_ixs[1]
-                        if werewolf_ixs[0] == p.ix
-                        else werewolf_ixs[0]
+                        werewolf_ixs[1] if werewolf_ixs[0] == p.ix else werewolf_ixs[0]
                     )
                     p.night_actions.append(
                         f"You saw that Player {other_werewolf_ix} is the other werewolf."
@@ -257,9 +255,7 @@ class GameState:
             if p.role_started is Role.mason:
                 if len(masons) == 2:
                     other_mason_ix = (
-                        mason_ixs[1]
-                        if mason_ixs[0] == p.ix
-                        else mason_ixs[0]
+                        mason_ixs[1] if mason_ixs[0] == p.ix else mason_ixs[0]
                     )
                     p.night_actions.append(
                         f"You saw that Player {other_mason_ix} is the other mason."
@@ -289,9 +285,7 @@ class GameState:
         # 6. Robber
         for p in self.players:
             if p.role_started is Role.robber:
-                player_to_rob = random.choice(
-                    [q for q in self.players if p.ix != q.ix]
-                )
+                player_to_rob = random.choice([q for q in self.players if p.ix != q.ix])
                 p.role_current, player_to_rob.role_current = (
                     player_to_rob.role_current,
                     p.role_current,
@@ -312,7 +306,9 @@ class GameState:
         # 7. Troublemaker
         for p in self.players:
             if p.role_started is Role.troublemaker:
-                players_to_switch = random.sample([q for q in self.players if p.ix != q.ix], 2)
+                players_to_switch = random.sample(
+                    [q for q in self.players if p.ix != q.ix], 2
+                )
                 players_to_switch[0].role_current, players_to_switch[1].role_current = (
                     players_to_switch[1].role_current,
                     players_to_switch[0].role_current,
@@ -325,7 +321,10 @@ class GameState:
         for p in self.players:
             if p.role_started is Role.drunk:
                 card_ix = random.randrange(len(self.cards_in_middle))
-                p.role_current, self.cards_in_middle[card_ix] = self.cards_in_middle[card_ix], p.role_current
+                p.role_current, self.cards_in_middle[card_ix] = (
+                    self.cards_in_middle[card_ix],
+                    p.role_current,
+                )
                 p.night_actions.append(
                     f"You switched your card with a card in the center. Who knows!"
                 )
@@ -349,8 +348,6 @@ class GameState:
                 )
 
         return self
-
-
 
     def roles_in_play_strs(self) -> list[str]:
         return sorted(p.role_current.value for p in self.players)
@@ -427,21 +424,29 @@ class GameState:
         votes: list[Message] = []
 
         async def collect_vote(ix: int):
-            prompt = (
-                self.prompt_for_player(ix)
-                + "\n"
-                + GAME_END_PROMPT
-            )
+            prompt = self.prompt_for_player(ix) + "\n" + GAME_END_PROMPT
             response = await sample(prompt)
             vote = parse_xml_tag(response, "vote")
             try:
                 vote_num = int(vote)
                 if 0 <= vote_num < len(self.players):
-                    votes.append(Message(from_player=ix, scratchpad="", speech=f"voted for Player {vote_num}"))
+                    votes.append(
+                        Message(
+                            from_player=ix,
+                            scratchpad="",
+                            speech=f"voted for Player {vote_num}",
+                        )
+                    )
                 else:
-                    votes.append(Message(from_player=ix, scratchpad="", speech="cast invalid vote"))
+                    votes.append(
+                        Message(
+                            from_player=ix, scratchpad="", speech="cast invalid vote"
+                        )
+                    )
             except ValueError:
-                votes.append(Message(from_player=ix, scratchpad="", speech="cast invalid vote"))
+                votes.append(
+                    Message(from_player=ix, scratchpad="", speech="cast invalid vote")
+                )
 
         async with trio.open_nursery() as nursery:
             for ix in range(len(self.players)):
@@ -464,7 +469,7 @@ class GameState:
         result = Message(
             from_player=-1,
             scratchpad="",
-            speech=f"Player(s) {', '.join(str(p) for p in executed)} executed with {most_votes} votes each."
+            speech=f"Player(s) {', '.join(str(p) for p in executed)} executed with {most_votes} votes each.",
         )
         self.history.append([result])
         return self
@@ -489,8 +494,12 @@ class GameState:
                     else:
                         color = "yellow"
 
-                    header = f"Player {message.from_player} ({player.role_started.value})"
-                    round_output.append(f"[dim italic {color}]{header} scratchpad: {message.scratchpad}[/]")
+                    header = (
+                        f"Player {message.from_player} ({player.role_started.value})"
+                    )
+                    round_output.append(
+                        f"[dim italic {color}]{header} scratchpad: {message.scratchpad}[/]"
+                    )
 
             # Then add all speeches in normal formatting
             for message in sorted_messages:
@@ -504,7 +513,9 @@ class GameState:
                     else:
                         color = "yellow"
 
-                    header = f"Player {message.from_player} ({player.role_started.value})"
+                    header = (
+                        f"Player {message.from_player} ({player.role_started.value})"
+                    )
                     round_output.append(f"[{color}]{header}: {message.speech}[/]")
 
             output.append("\n".join(round_output))
@@ -527,7 +538,9 @@ class GameSetup:
             Player(ix=ix, role_started=role, role_current=role, night_actions=[])
             for ix, role in enumerate(cards_in_play)
         ]
-        return GameState(players=players, cards=list(self.cards), cards_in_middle=cards_in_middle)
+        return GameState(
+            players=players, cards=list(self.cards), cards_in_middle=cards_in_middle
+        )
 
     @classmethod
     def random(cls, n_players: int) -> "GameSetup":
