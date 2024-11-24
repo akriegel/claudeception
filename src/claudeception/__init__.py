@@ -146,7 +146,7 @@ class Role(enum.Enum):
     def team(self) -> str:
         if self in {Role.werewolf, Role.minion}:
             return "werewolf"
-        if self in {Role.tanner}:
+        elif self is Role.tanner:
             return self.value.lower()
         else:
             return "villager"
