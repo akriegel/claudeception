@@ -87,6 +87,8 @@ to ask additional questions about what you've said sometimes.
 - If you're a werewolf, deceive and create doubt without being too obvious
 - If you're a special role, consider whether revealing information helps your team \
 win. Be strategic about what you reveal and when.
+- If you're the tanner, try to subtly cast suspicion on yourself to convince people \
+to vote for you.
 - You can question others' claims or support them
 - Pay attention to others' behavior - are they telling the truth?
 
@@ -144,7 +146,10 @@ class Role(enum.Enum):
     def team(self) -> str:
         if self in {Role.werewolf, Role.minion}:
             return "werewolf"
-        return "villager"
+        if self in {Role.tanner}:
+            return self.value.lower()
+        else:
+            return "villager"
 
     def blurb(self) -> str:
         if self in {
@@ -490,7 +495,12 @@ class GameState:
                     current_team = player.role_current.team()
 
                     if started_team == current_team:
-                        color = "red" if started_team == "werewolf" else "green"
+                        if started_team == "werewolf":
+                            color = "red"
+                        elif started_team == "villager":
+                            color = "green"
+                        else:
+                            color = "blue"
                     else:
                         color = "yellow"
 
@@ -509,7 +519,12 @@ class GameState:
                     current_team = player.role_current.team()
 
                     if started_team == current_team:
-                        color = "red" if started_team == "werewolf" else "green"
+                        if started_team == "werewolf":
+                            color = "red"
+                        elif started_team == "villager":
+                            color = "green"
+                        else:
+                            color = "blue"
                     else:
                         color = "yellow"
 
